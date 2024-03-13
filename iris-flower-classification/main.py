@@ -2,14 +2,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-%matplotlib inline
+#if you are running this on jupyter notebook or google colab include %matplotlib inline
 
 # columns
 columns = ['Sepal length', 'Sepal width', 'Petal length', 'Petal width', 'Class_labels']
 
 
 # loading the data from iris.data
-df = pd.read_csv('/home/uzayr/Desktop/python/internship/iris.data', names=columns)
+df = pd.read_csv('iris.data', names=columns)
 
 
 #to see 5 rows from the table
@@ -81,12 +81,12 @@ print("Prediction of Species: {}".format(prediction_inputV))
 
 # Save the model
 import pickle
-with open('/home/uzayr/Desktop/python/internship/SVM.pickle', 'wb') as file:
+with open('SVM.pickle', 'wb') as file:
     pickle.dump(support_vector, file)
 
 
 # Load the model
-with open('/home/uzayr/Desktop/python/internship/SVM.pickle', 'rb') as file:
+with open('SVM.pickle', 'rb') as file:
     model = pickle.load(file)
 
 model.predict(final)
