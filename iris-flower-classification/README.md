@@ -2,6 +2,9 @@
 
 Iris flower classification is a very popular machine learning project. The iris dataset contains three classes of flowers, Versicolor, Setosa, Virginica, and each class contains 4 features, ‘Sepal length’, ‘Sepal width’, ‘Petal length’, ‘Petal width’. The aim of the iris flower classification is to predict flowers based on their specific features.
 
+## Data Set
+[Kaggle - saurabh00007](https://www.kaggle.com/datasets/saurabh00007/iriscsv)
+
 ## Libraries used:
 - numpy
 - pandas
